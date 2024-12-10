@@ -11,7 +11,7 @@ from selenium.webdriver.chrome.options import Options as ChromeOptions
 # without any changes to the test files!
 
 options = ChromeOptions()
-# options.set_capability('sessionName', 'BStack Sample Test')
+options.set_capability('sessionName', 'BStack Sample Test')
 driver = webdriver.Chrome(options=options)
 
 item_in_cart_xpath = "//div[@class='float-cart__content']//p[@class='title']"
