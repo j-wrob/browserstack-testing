@@ -1,3 +1,5 @@
+buildIdentifier: ${DATE_TIME} # Supports strings along with either/both ${expression}
+
 platforms:
   - os: OS X
     osVersion: Big Sur

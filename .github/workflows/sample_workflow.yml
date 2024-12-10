@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       buildName:
-        description: 'j-wrob-build'
+        description: 'custom build name'
         required: true
 jobs:
   ubuntu-job:
