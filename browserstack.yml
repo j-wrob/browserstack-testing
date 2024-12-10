@@ -1,19 +1,21 @@
-projectName: "My-sample-project"
-buildName: "My-sample-build"
-buildIdentifier: ${DATE_TIME} # Supports strings along with either/both ${expression}
+
 
 platforms:
   - os: OS X
     osVersion: Big Sur
     browserName: Chrome
     browserVersion: latest
-#  - os: Windows
-#    osVersion: 10
-#    browserName: Edge
-#    browserVersion: latest
-#  - deviceName: Samsung Galaxy S22 Ultra
-#    browserName: chrome # Try 'samsung' for Samsung browser
-#    osVersion: 12.0
+  - os: Windows
+    osVersion: 10
+    browserName: Edge
+    browserVersion: latest
+  - deviceName: Samsung Galaxy S22 Ultra
+    browserName: chrome # Try 'samsung' for Samsung browser
+    osVersion: 12.0
+
+projectName: "My-sample-project"
+buildName: "My-sample-build"
+buildIdentifier: ${DATE_TIME} # Supports strings along with either/both ${expression}
 
 browserstackLocal: false
 acceptInsecureCerts: true
