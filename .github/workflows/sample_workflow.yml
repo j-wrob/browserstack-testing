@@ -1,5 +1,10 @@
-name: 'BrowserStack Test'
-on: workflow_dispatch
+name: 'Sample BS Test'
+on:
+  workflow_dispatch:
+    inputs:
+      buildName:
+        description: 'j-wrob-build'
+        required: true
 jobs:
   ubuntu-job:
     name: 'BrowserStack Test on Ubuntu'

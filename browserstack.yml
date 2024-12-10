@@ -1,5 +1,3 @@
-
-
 platforms:
   - os: OS X
     osVersion: Big Sur
@@ -12,10 +10,6 @@ platforms:
   - deviceName: Samsung Galaxy S22 Ultra
     browserName: chrome # Try 'samsung' for Samsung browser
     osVersion: 12.0
-
-projectName: "My-sample-project"
-buildName: "My-sample-build"
-buildIdentifier: ${DATE_TIME} # Supports strings along with either/both ${expression}
 
 browserstackLocal: false
 acceptInsecureCerts: true

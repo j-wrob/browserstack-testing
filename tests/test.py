@@ -10,7 +10,6 @@ from selenium.webdriver.chrome.options import Options as ChromeOptions
 # so this will be overridden and tests will run browserstack -
 # without any changes to the test files!
 bstack_options = {
-    "buildName" : "j-wrob build",
     "sessionName": "j-wrob sample session",
     "projectName" : "j-wrob project",
     "seleniumVersion" : "4.0.0",
