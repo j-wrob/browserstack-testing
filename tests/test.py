@@ -9,9 +9,18 @@ from selenium.webdriver.chrome.options import Options as ChromeOptions
 # The webdriver management will be handled by the browserstack-sdk
 # so this will be overridden and tests will run browserstack -
 # without any changes to the test files!
+bstack_options = {
+    "os" : "Windows",
+    "osVersion" : "10",
+    "buildName" : "j-wrob build",
+    "sessionName": "j-wrob sample session",
+    "projectName" : "j-wrob project",
+    "seleniumVersion" : "4.0.0",
+}
 
 options = ChromeOptions()
-options.set_capability('sessionName', 'BStack Sample Test')
+# options.set_capability('sessionName', 'j-wrob sample session')
+options.set_capability('bstack:options', bstack_options)
 driver = webdriver.Chrome(options=options)
 
 item_in_cart_xpath = "//div[@class='float-cart__content']//p[@class='title']"
